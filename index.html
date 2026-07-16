@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Основная иконка для старых браузеров -->
+    <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+
+    <!-- Иконки разных размеров для современных браузеров -->
+    <link
+      rel="icon"
+      href="/favicon/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="/favicon/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+
+    <!-- Иконка для устройств Apple (iOS) -->
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+
+    <!-- Манифест для Android-устройств и PWA -->
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>София Капитанова — Frontend разработчица</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Портфолио frontend-разработчицы: стек, проекты, контакты"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <!-- Шапка с переключателем темы -->
+      <header class="header">
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Переключить тему"
+        >
+          <span class="theme-toggle__icon" id="themeIcon" aria-hidden="true"
+            >🌙</span
+          >
+        </button>
+      </header>
+      <main>
+        <!-- Hero: фото, имя, роль -->
+
+        <section class="hero">
+          <img
+            class="hero__avatar"
+            src="/images/avatar.jpg"
+            alt="Фото профиля"
+          />
+
+          <h1 class="hero__name">София Капитанова</h1>
+          <p class="hero__role">Frontend разработчица · TypeScript / React</p>
+          <div class="hero__divider"></div>
+        </section>
+
+        <!-- Обо мне -->
+        <section class="section about" aria-labelledby="about-title">
+          <h2 class="section__title" id="about-title">Обо мне</h2>
+          <div class="about__card">
+            <p>
+              Мне 25, я из Москвы, и да — диплом у меня гуманитарный. Путь в IT
+              начался с любопытства: пошла на HTML Academy попробовать вёрстку —
+              понравилось. Пробовала себя в лёгких задачах на ставке —
+              получалось, но ощущала нехватку знаний.
+            </p>
+            <p>
+              Решила основательно учиться профессии — взяла курс Яндекс
+              Практикума «Фронтенд-разработчик» (заканчиваю 25 октября этого
+              года). Осталось 4 спринта. Следующая тема — React.
+            </p>
+          </div>
+        </section>
+
+        <!-- Образование -->
+        <section class="section education" aria-labelledby="education-title">
+          <h2 class="section__title" id="education-title">Образование</h2>
+          <div class="education__grid">
+            <!-- Первая карточка -->
+            <button
+              class="education__card"
+              data-image="/images/education/диплом_высшее.jpg"
+              data-title="Диплом о высшем образовании"
+            >
+              <span class="education__icon">🎓</span>
+              <span class="education__name">Высшее образование</span>
+              <span class="education__meta">диплом · посмотреть</span>
+            </button>
+
+            <!-- Вторая карточка -->
+            <button
+              class="education__card"
+              data-image="/images/education/сертификат_заглушка.png"
+              data-title="Сертификат Яндекс Практикума"
+            >
+              <span class="education__icon">📜</span>
+              <span class="education__name">Яндекс Практикум</span>
+              <span class="education__meta">сертификат · посмотреть</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Стек -->
+        <section class="section skills" aria-labelledby="skills-title">
+          <h2 class="section__title" id="skills-title">Стек</h2>
+          <ul class="skills__list">
+            <li class="skills__tag">TypeScript</li>
+            <li class="skills__tag">React</li>
+            <li class="skills__tag">HTML / CSS</li>
+            <li class="skills__tag">Figma</li>
+            <li class="skills__tag">Git</li>
+          </ul>
+        </section>
+
+        <!-- Проекты -->
+        <section class="section projects" aria-labelledby="projects-title">
+          <h2 class="sr-only" id="projects-title">Учебные проекты</h2>
+          <button class="projects__trigger" id="projectsTrigger">
+            <span class="projects__trigger__arrow"></span>
+            6 учебных проектов завершено
+          </button>
+          <p class="projects__hint" id="projectsHint">
+            ( нажми, чтобы посмотреть )
+          </p>
+          <div class="projects__cards" id="projectsCards">
+            <!-- Карточки проектов рендерятся через JS из data/projects.js -->
+          </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="section contacts" aria-labelledby="contacts-title">
+          <h2 class="section__title" id="contacts-title">Связаться</h2>
+          <div class="contacts__grid">
+            <a
+              class="contacts__link contacts__link--accent"
+              href="https://t.me/Sofik000000"
+              target="_blank"
+              rel="noopener"
+              >Telegram</a
+            >
+            <a
+              class="contacts__link"
+              href="https://github.com/Sofia-Kapitanova"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <a
+              class="contacts__link"
+              href="mailto:sofi.kapitanova2020@gmail.com"
+              >Почта</a
+            >
+            <a class="contacts__link" href="tel:+79851516532">Телефон</a>
+            <a
+              class="contacts__link"
+              href="https://hh.ru/resume/b1410140ff09a1784c0039ed1f363157317a49"
+              target="_blank"
+              rel="noopener"
+              >hh.ru</a
+            >
+            <a
+              class="contacts__link"
+              href="https://setka.ru/users/019d29dc-91cc-71b3-a1f9-9ae14f9ffefc"
+              target="_blank"
+              rel="noopener"
+              >Сетка</a
+            >
+          </div>
+        </section>
+      </main>
+      <!-- Подвал -->
+      <footer class="footer">
+        <p class="footer__text">
+          console.log('спасибо, что заглянули')
+          <span class="footer__heart" aria-hidden="true">♥</span>
+        </p>
+      </footer>
+    </div>
+
+    <div class="modal" id="educationModal" aria-hidden="true">
+      <div class="modal__backdrop" id="modalBackdrop"></div>
+      <div
+        class="modal__content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button class="modal__close" id="modalClose" aria-label="Закрыть">
+          ✕
+        </button>
+        <img class="modal__image" id="modalImage" src="" alt="" />
+        <p class="sr-only" id="modalTitle"></p>
+      </div>
+    </div>
+
+    <div class="modal" id="projectsModal" aria-hidden="true">
+      <div class="modal__backdrop" id="projectsModalBackdrop"></div>
+      <button
+        class="modal__arrow modal__arrow--prev"
+        id="projectsModalPrev"
+        aria-label="Предыдущий проект"
+      >
+        ‹
+      </button>
+      <div
+        class="modal__content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="projectsModalName"
+      >
+        <button
+          class="modal__close"
+          id="projectsModalClose"
+          aria-label="Закрыть"
+        >
+          ✕
+        </button>
+        <img class="modal__image" id="projectsModalImage" src="" alt="" />
+        <div class="modal__info">
+          <p class="modal__name" id="projectsModalName"></p>
+          <p class="modal__description" id="projectsModalDescription"></p>
+        </div>
+      </div>
+      <button
+        class="modal__arrow modal__arrow--next"
+        id="projectsModalNext"
+        aria-label="Следующий проект"
+      >
+        ›
+      </button>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

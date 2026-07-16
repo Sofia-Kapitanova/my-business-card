@@ -1,0 +1,19 @@
+.skills {
+  padding: 0 var(--space-lg) var(--space-2xl);
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.skills__tag {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: var(--fs-small);
+  padding: 7px 14px;
+  border-radius: var(--radius-pill);
+  transition: background-color var(--transition-fast);
+}

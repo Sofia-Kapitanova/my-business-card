@@ -1,0 +1,23 @@
+/* Светлая тема — значения по умолчанию */
+[data-theme='light'] {
+  --bg: var(--color-bg);
+  --bg-card: var(--color-bg-card);
+  --text: var(--color-text);
+  --text-secondary: var(--color-text-secondary);
+  --accent: var(--color-accent);
+  --accent-text: var(--color-accent-text);
+  --border: var(--color-border);
+  --accent-rgb: var(--color-accent-rgb);
+}
+
+/* Тёмная тема */
+[data-theme='dark'] {
+  --bg: var(--color-bg-dark);
+  --bg-card: var(--color-bg-card-dark);
+  --text: var(--color-text-dark);
+  --text-secondary: var(--color-text-secondary-dark);
+  --accent: var(--color-accent-dark);
+  --accent-text: var(--color-accent-text-dark);
+  --border: var(--color-border-dark);
+  --accent-rgb: var(--color-accent-rgb-dark);
+}

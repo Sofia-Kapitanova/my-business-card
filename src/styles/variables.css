@@ -1,0 +1,62 @@
+:root {
+  /* Аватар*/
+
+  --avatar-url: url('/images/avatar.jpg');
+
+  /* Цвета — светлая тема (базовые) */
+  --color-bg: #f5f1ea;
+  --color-bg-card: #ffffff;
+  --color-text: #2b2620;
+  --color-text-secondary: #8c8577;
+  --color-accent: #e91e8c;
+  --color-accent-text: #fff5fa;
+  --color-border: #d8d2c4;
+
+  /* Цвета — тёмная тема */
+  --color-bg-dark: #211e1a;
+  --color-bg-card-dark: #2e2a24;
+  --color-text-dark: #f5f1ea;
+  --color-text-secondary-dark: #9a9186;
+  --color-accent-dark: #f5379e;
+  --color-accent-text-dark: #2b0a1b;
+  --color-border-dark: #4a443a;
+
+  /* Типографика */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --fs-name: clamp(20px, 5vw, 26px);
+  --fs-role: clamp(12px, 3vw, 14px);
+  --fs-section-title: clamp(10px, 2.2vw, 12px);
+  --fs-body: clamp(14px, 3.2vw, 15px);
+  --fs-small: clamp(12px, 2.7vw, 13px);
+  --fs-tiny: clamp(10px, 2.2vw, 11px);
+
+  /* Отступы */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* Скругления */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 50%;
+  --radius-pill: 999px;
+
+  /* Прочее */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-modal: 0.3s linear;
+
+  /* Договоренность о брейпоинте - везде пишем @media (max-width: 768px)*/
+  --breakpoint-mobile: 768px;
+
+  /* Подсветка кнопок при наведении*/
+  --color-accent-rgb: 233, 30, 140;
+  --color-accent-rgb-dark: 245, 55, 158;
+}

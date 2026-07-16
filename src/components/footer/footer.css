@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--bg-card);
+  padding: var(--space-md) var(--space-lg);
+  text-align: center;
+}
+
+.footer__text {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--text-secondary);
+}
+
+.footer__heart {
+  color: var(--accent);
+  margin-left: 4px;
+}
