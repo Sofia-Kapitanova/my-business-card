@@ -201,7 +201,9 @@
   }
 
   .project-card__thumb {
-    height: max-content;
+    height: 260px;
+    object-fit: contain;
+    background-color: var(--bg-card);
   }
 
   .project-card__name {
